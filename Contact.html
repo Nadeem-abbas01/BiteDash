@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact-BiteDash</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow p-3 bg-body-tertiary rounded">
+      <div class="container">
+        <h4 class="fw-bold pe-3 pt-2" href="#">BiteDash <i class="fa-solid fa-utensils ps-2"></i></h4>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 5L20 5" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4 12L20 12" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4 19L20 19" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav  m-auto">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </button>
+              <ul class="dropdown-menu ">
+                <div class="container">
+                      <div class="row">
+                        <div class="col-6">
+                          <h6 class="ps-3 fw-bold">
+                            We Offer
+                          </h6>
+                          <li><a class="dropdown-item text-secondary" href="Menu1.html">Breakfast</a></li>
+                            <li><a class="dropdown-item text-secondary" href="Menu1.html">Lunch</a></li>
+                            <li><a class="dropdown-item text-secondary" href="Menu1.html">Dinner</a></li>
+                        </div>
+                        <div class="col-6">
+                          <h6 class="ps-3 fw-bold">
+                            We Offer
+                          </h6>
+                            <li><a class="dropdown-item text-secondary" href="Menu2.html">Drinks</a></li>
+                            <li><a class="dropdown-item text-secondary" href="Menu2.html">Ice Cream</a></li>
+                            <li><a class="dropdown-item text-secondary" href="Menu2.html">Desserts</a></li>
+                        </div>
+                      </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="Contact.html"><button class="button-85" role="button">Book A Table</button></a>
+        </div>
+      </div>
+    </nav>
+    <!-- home -->
+    <section id="home">
+      <div class="container">
+        <h1 class="text-center fw-bold pt-5 pb-5 text-light">CONTACT</h1>
+      </div>
+    </section>
+    <!--Contact -->
+    <section>
+        <div class="container pt-5">
+        <div class="mb-5 pt-5 p-4 d-flex justify-content-center">
+            <form class="form" action="" id="loginForm">
+              <div class="controls">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="mb-4">
+                      <label class="form-label" for="name">Your Firstname *</label>
+                      <input class="form-control" type="text" name="name" id="name" placeholder="Enter your Firstname" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="mb-4">
+                      <label class="form-label " for="surname">Your Lastname *</label>
+                      <input class="form-control " type="text" name="surname" id="surname" placeholder="Enter your Lastname" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label class="form-label" for="email">Your email *</label>
+                  <input class="form-control" type="email" name="email" id="email" placeholder="Enter your  email" required="required">
+                </div>
+                <div class="mb-4">
+                  <label class="form-label" for="message">Your message for us *</label>
+                  <textarea class="form-control" rows="4" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+                </div>
+                <button class="btn btn-outline-secondary" onclick="openPopup()" type="submit" id="btnn" >Send message</button>
+              </div>             
+              </div>
+            </form>
+            <div class="popup p-3" id="popup">
+              <div>
+                <img src="Images/tick.png" class="img-fluid">
+              </div>
+              <div class="popup-head text-center">
+                <h2 class="fw-bold">Thank You!</h2>
+                <p>Your Form has been submitted successfully. Thanks</p>
+                <button class="btn btn-success w-75 mt-4" onclick="closePopup()" type="submit" style="background-color: #34b800;">OK</button>
+              </div>
+          </div>
+     </section>
+    <!-- Chef -->
+    <section class="pt-5 pb-5" id="chef">
+      <div class="container mt-5">
+        <h1 class="text-center fw-bold">Our Master Chef</h1>
+        <div class="row mt-5">
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+          >
+            <div
+              class="card border-0 shadow mb-5 bg-body-tertiary rounded"
+              style="width: 15rem"
+            >
+              <img
+                src="Images/chef-4.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">John Smooth</h5>
+                <p class="card-text text-secondary">Restaurant Owner</p>
+                <div class="card-icons">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+          >
+            <div
+              class="card border-0 shadow mb-5 bg-body-tertiary rounded"
+              style="width: 15rem"
+            >
+              <img
+                src="Images/chef-2.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">Rebeca Welson</h5>
+                <p class="card-text text-secondary">Head Chef</p>
+                <div class="card-icons">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+          >
+            <div
+              class="card border-0 shadow mb-5 bg-body-tertiary rounded"
+              style="width: 15rem"
+            >
+              <img
+                src="Images/chef-3.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">Kharl Branyt</h5>
+                <p class="card-text text-secondary">Chef</p>
+                <div class="card-icons">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+          >
+            <div
+              class="card border-0 shadow mb-5 bg-body-tertiary rounded"
+              style="width: 15rem"
+            >
+              <img
+                src="Images/chef-1.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">Luke Simon</h5>
+                <p class="card-text text-secondary">Chef</p>
+                <div class="card-icons">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <div class="container">
+          <div class="row text-light pt-5 align-items-center" id="foot">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="row text-light">
+                <div class="col-6 col-lg-6 col-md-12 col-sm-12">
+                  <h5 class="fw-bold mt-5">BiteDash</h5>
+                  <p class="fs-6 text-secondary pt-5">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="ficon">
+                    <a href="https://instagram.com/nadeem_abbas02" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>                                       
+                  <a href="https://web.facebook.com/ladla.nadeem.587" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <h5 class="fw-bold mt-5">Open Hours</h5>
+                  <div class="row pt-5">
+                    <div class="col-6 text-secondary col-md-6 col-sm-6">
+                      <ul class="list-unstyled text-center">
+                        <li class="d-flex">
+                          <span>Monday</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Tuesday</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Wednesday</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Thursday</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Friday</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Saturday</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Sunday</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-6 text-secondary col-md-6 col-sm-6">
+                      <ul class="list-unstyled text-center">
+                        <li class="d-flex">
+                          <span>9:00 - 24:00</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>9:00 - 24:00</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>9:00 - 24:00</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>9:00 - 24:00</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>9:00 - 02:00</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>9:00 - 02:00</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>9:00 - 02:00</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="row text-light">
+                <div class="col-6 col-lg-6 col-md-12 col-sm-12">
+                  <h5 class="fw-bold mt-5">Instagram</h5>
+                  <div class="insta-img pt-5">
+                    <img
+                      src="Images/insta-5.jpg.webp"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <h5 class="fw-bold mt-5">Newsletter</h5>
+                  <p class="pt-5 text-secondary">
+                    Far far away, behind the word mountains, far from the
+                    countries.
+                  </p>
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email Address"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-warning text-center ps-5 pe-5 w-100"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright" id="foot">
+          <p class="text-secondary mt-5 text-center pb-5">
+            Copyright ©2023 All rights reserved | This template is made by
+            Nadeem Abbas
+          </p>
+        </div>
+      </footer>
+    </section>
+    <!-- Javascript -->
+    <script src="index.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Tasty</i>,", "<i>Nutritious</i>,", "<i>Delicious</i>,"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

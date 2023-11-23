@@ -1,0 +1,245 @@
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* Navbar */
+.nav-item {
+  margin-left: 16px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 2px;
+  background-color: #b6b99b;
+  transition: 0.3s;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown-menu {
+    width: 400px;
+    margin-left: -150px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  background-color: #e6e6e5;
+}
+#btnn {
+  background-color: white;
+  color: #b6b99b;
+}
+#btnn:hover {
+  color: white;
+  background-color: #b4b6a7;
+}
+
+.button-85 {
+  padding: 0.4em 1em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Home */
+
+#home {
+  background: rgba(0, 0, 0, 0.8)
+    url(https://preview.colorlib.com/theme/feliciano/images/bg_1.jpg.webp)
+    no-repeat;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+#spin {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* service */
+.card-icons i {
+  color: #b6b99b;
+  font-size: 18px;
+  padding: 2px;
+  cursor: pointer;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all ease 0.2s;
+}
+
+#chef {
+  background-color: #dbdbda;
+}
+/* footer */
+footer {
+  background-color: #141313;
+}
+.ficon a i {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  #foot {
+    padding: 20px;
+  }
+  .button-85 {
+    width: 100%;
+  }
+}
+
+/* customer */
+
+#cus {
+  font-size: 30px;
+  color: #b6b99b;
+}
+
+/* testimonial */
+#testimonial {
+  background-color: #c9c9c9;
+}
+#test-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* popup */
+  .popup {
+    width: 60vh;
+    height: 320px;
+    background-color: #f2b34d;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    justify-content: center;
+    border-radius: 12px;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.2s top 0.2s;
+  }
+  .open-popup{
+    top: 70%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+  }
+  .popup img {
+    height: 140px;
+    padding-left: 30%;
+    top: -75px;
+   position: relative;
+  }
+  .popup-head{
+    margin-top: -45px;
+  }
+  @media screen and (max-width: 1239px) {
+    .popup{
+      width: 70vh;
+      height: 280px;
+    }
+     .popup img{
+      height: 130px;
+      padding-left: 25%;
+      top: -75px;
+     position: relative;
+    }
+     .popup-head{
+      margin-top: -60px;
+    }
+    .popup-head h2{
+      font-size: 22px;
+    }
+    .open-popup{
+      top: 90%;
+    }
+  }
